@@ -393,7 +393,7 @@ void Plot::changeName(int _pos, QString _newName)
 void Plot::changeColor(int _id, QColor _newColor)
 {
 	QwtPlotItemList items = itemList(QwtPlotItem::Rtti_PlotCurve);
-	vector<QSharedPointer<Curve>>::const_iterator it;
+	vector<QSharedPointer<Curve> >::const_iterator it;
 	for(it = curves_.begin(); it != curves_.end(); ++it) 
 	{	
 		if((*it)->getIndex() == _id) {
@@ -413,7 +413,7 @@ void Plot::getColAuc(int _id)
 	QColor color;
 	double auc=-1.0;
 	QwtPlotItemList items = itemList(QwtPlotItem::Rtti_PlotCurve);
-	vector<QSharedPointer<Curve>>::const_iterator it;
+	vector<QSharedPointer<Curve> >::const_iterator it;
 	for(it = curves_.begin(); it != curves_.end(); ++it) 
 	{	
 		if((*it)->getIndex() == _id) {

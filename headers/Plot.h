@@ -76,8 +76,8 @@ private:
 
 	int type;
 	int curve_counter;
-	vector<QSharedPointer<Curve>> curves_;
-	vector<QSharedPointer<ProxyFile>> proxies_;
+	vector<QSharedPointer<Curve> > curves_;
+	vector<QSharedPointer<ProxyFile> > proxies_;
 
 	QPointer<QwtLegend> legend;
 	QwtPlotGrid* grid;
